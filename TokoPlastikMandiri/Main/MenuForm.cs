@@ -45,7 +45,9 @@ namespace TokoPlastikMandiri.Main
 
         private void btnBarang_Click(object sender, EventArgs e)
         {
-
+            Master.MasterBarang masterBarang = new Master.MasterBarang();
+            masterBarang.Show();
+            this.Hide();
         }
 
         private void btnSupplier_Click(object sender, EventArgs e)

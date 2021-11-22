@@ -165,7 +165,7 @@ namespace TokoPlastikMandiri.Master
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(237, 171);
+            this.btnDelete.Location = new System.Drawing.Point(239, 171);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(105, 24);
             this.btnDelete.TabIndex = 6;

@@ -146,6 +146,9 @@
     <EmbeddedResource Include="Main\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Master\MasterBarang.resx">
+      <DependentUpon>MasterBarang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Master\MasterCustomer.resx">
       <DependentUpon>MasterCustomer.cs</DependentUpon>
     </EmbeddedResource>

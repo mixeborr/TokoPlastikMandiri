@@ -30,22 +30,23 @@ namespace TokoPlastikMandiri.Master
         private void InitializeComponent()
         {
             this.groupBoxInputBarang = new System.Windows.Forms.GroupBox();
+            this.cbSatuanBarang = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbHargaJualBarang = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbHargaBeliBarang = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbKategoriBarang = new System.Windows.Forms.ComboBox();
+            this.tbNamaBarang = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tbKodeBarang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbNamaBarang = new System.Windows.Forms.TextBox();
-            this.cbKategoriBarang = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbHargaBeliBarang = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbHargaJualBarang = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbSatuanBarang = new System.Windows.Forms.ComboBox();
             this.btnTambahMasterBarang = new System.Windows.Forms.Button();
             this.btnUbahMasterBarang = new System.Windows.Forms.Button();
             this.btnHapusMasterBarang = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.KodeBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxInputBarang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +72,88 @@ namespace TokoPlastikMandiri.Master
             this.groupBoxInputBarang.TabStop = false;
             this.groupBoxInputBarang.Text = "Master Barang";
             // 
+            // cbSatuanBarang
+            // 
+            this.cbSatuanBarang.FormattingEnabled = true;
+            this.cbSatuanBarang.Location = new System.Drawing.Point(505, 87);
+            this.cbSatuanBarang.Name = "cbSatuanBarang";
+            this.cbSatuanBarang.Size = new System.Drawing.Size(121, 28);
+            this.cbSatuanBarang.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(501, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 20);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Satuan Barang";
+            // 
+            // tbHargaJualBarang
+            // 
+            this.tbHargaJualBarang.Location = new System.Drawing.Point(484, 132);
+            this.tbHargaJualBarang.Name = "tbHargaJualBarang";
+            this.tbHargaJualBarang.Size = new System.Drawing.Size(230, 26);
+            this.tbHargaJualBarang.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(349, 138);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Harga Jual";
+            // 
+            // tbHargaBeliBarang
+            // 
+            this.tbHargaBeliBarang.Location = new System.Drawing.Point(95, 132);
+            this.tbHargaBeliBarang.Name = "tbHargaBeliBarang";
+            this.tbHargaBeliBarang.Size = new System.Drawing.Size(231, 26);
+            this.tbHargaBeliBarang.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Harga Beli";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(349, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Kategori Barang ";
+            // 
+            // cbKategoriBarang
+            // 
+            this.cbKategoriBarang.FormattingEnabled = true;
+            this.cbKategoriBarang.Location = new System.Drawing.Point(353, 87);
+            this.cbKategoriBarang.Name = "cbKategoriBarang";
+            this.cbKategoriBarang.Size = new System.Drawing.Size(121, 28);
+            this.cbKategoriBarang.TabIndex = 4;
+            // 
+            // tbNamaBarang
+            // 
+            this.tbNamaBarang.Location = new System.Drawing.Point(96, 87);
+            this.tbNamaBarang.Name = "tbNamaBarang";
+            this.tbNamaBarang.Size = new System.Drawing.Size(230, 26);
+            this.tbNamaBarang.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nama";
+            // 
             // tbKodeBarang
             // 
             this.tbKodeBarang.BackColor = System.Drawing.SystemColors.Control;
@@ -88,88 +171,6 @@ namespace TokoPlastikMandiri.Master
             this.label1.Size = new System.Drawing.Size(46, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kode";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nama";
-            // 
-            // tbNamaBarang
-            // 
-            this.tbNamaBarang.Location = new System.Drawing.Point(96, 87);
-            this.tbNamaBarang.Name = "tbNamaBarang";
-            this.tbNamaBarang.Size = new System.Drawing.Size(230, 26);
-            this.tbNamaBarang.TabIndex = 3;
-            // 
-            // cbKategoriBarang
-            // 
-            this.cbKategoriBarang.FormattingEnabled = true;
-            this.cbKategoriBarang.Location = new System.Drawing.Point(353, 87);
-            this.cbKategoriBarang.Name = "cbKategoriBarang";
-            this.cbKategoriBarang.Size = new System.Drawing.Size(121, 28);
-            this.cbKategoriBarang.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(349, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Kategori Barang ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 138);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Harga Beli";
-            // 
-            // tbHargaBeliBarang
-            // 
-            this.tbHargaBeliBarang.Location = new System.Drawing.Point(95, 132);
-            this.tbHargaBeliBarang.Name = "tbHargaBeliBarang";
-            this.tbHargaBeliBarang.Size = new System.Drawing.Size(231, 26);
-            this.tbHargaBeliBarang.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(349, 138);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 20);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Harga Jual";
-            // 
-            // tbHargaJualBarang
-            // 
-            this.tbHargaJualBarang.Location = new System.Drawing.Point(484, 132);
-            this.tbHargaJualBarang.Name = "tbHargaJualBarang";
-            this.tbHargaJualBarang.Size = new System.Drawing.Size(230, 26);
-            this.tbHargaJualBarang.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(501, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Satuan Barang";
-            // 
-            // cbSatuanBarang
-            // 
-            this.cbSatuanBarang.FormattingEnabled = true;
-            this.cbSatuanBarang.Location = new System.Drawing.Point(505, 87);
-            this.cbSatuanBarang.Name = "cbSatuanBarang";
-            this.cbSatuanBarang.Size = new System.Drawing.Size(121, 28);
-            this.cbSatuanBarang.TabIndex = 11;
             // 
             // btnTambahMasterBarang
             // 
@@ -201,12 +202,21 @@ namespace TokoPlastikMandiri.Master
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.KodeBarang});
             this.dataGridView1.Location = new System.Drawing.Point(12, 242);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(776, 196);
             this.dataGridView1.TabIndex = 4;
+            // 
+            // KodeBarang
+            // 
+            this.KodeBarang.HeaderText = "Kode";
+            this.KodeBarang.MinimumWidth = 8;
+            this.KodeBarang.Name = "KodeBarang";
+            this.KodeBarang.Width = 150;
             // 
             // MasterBarang
             // 
@@ -246,5 +256,6 @@ namespace TokoPlastikMandiri.Master
         private System.Windows.Forms.Button btnUbahMasterBarang;
         private System.Windows.Forms.Button btnHapusMasterBarang;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KodeBarang;
     }
 }

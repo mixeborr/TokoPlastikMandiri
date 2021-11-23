@@ -47,6 +47,12 @@ namespace TokoPlastikMandiri.Master
             this.btnHapusMasterBarang = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.KodeBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QtyBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KategoriBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SatuanBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HargaBeliBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HargaJualBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxInputBarang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -203,7 +209,13 @@ namespace TokoPlastikMandiri.Master
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.KodeBarang});
+            this.KodeBarang,
+            this.NamaBarang,
+            this.QtyBarang,
+            this.KategoriBarang,
+            this.SatuanBarang,
+            this.HargaBeliBarang,
+            this.HargaJualBarang});
             this.dataGridView1.Location = new System.Drawing.Point(12, 242);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -216,7 +228,50 @@ namespace TokoPlastikMandiri.Master
             this.KodeBarang.HeaderText = "Kode";
             this.KodeBarang.MinimumWidth = 8;
             this.KodeBarang.Name = "KodeBarang";
+            this.KodeBarang.ReadOnly = true;
             this.KodeBarang.Width = 150;
+            // 
+            // NamaBarang
+            // 
+            this.NamaBarang.HeaderText = "Nama";
+            this.NamaBarang.MinimumWidth = 8;
+            this.NamaBarang.Name = "NamaBarang";
+            this.NamaBarang.Width = 150;
+            // 
+            // QtyBarang
+            // 
+            this.QtyBarang.HeaderText = "Qty";
+            this.QtyBarang.MinimumWidth = 8;
+            this.QtyBarang.Name = "QtyBarang";
+            this.QtyBarang.Width = 150;
+            // 
+            // KategoriBarang
+            // 
+            this.KategoriBarang.HeaderText = "Kategori";
+            this.KategoriBarang.MinimumWidth = 8;
+            this.KategoriBarang.Name = "KategoriBarang";
+            this.KategoriBarang.Width = 150;
+            // 
+            // SatuanBarang
+            // 
+            this.SatuanBarang.HeaderText = "Satuan";
+            this.SatuanBarang.MinimumWidth = 8;
+            this.SatuanBarang.Name = "SatuanBarang";
+            this.SatuanBarang.Width = 150;
+            // 
+            // HargaBeliBarang
+            // 
+            this.HargaBeliBarang.HeaderText = "Harga Beli";
+            this.HargaBeliBarang.MinimumWidth = 8;
+            this.HargaBeliBarang.Name = "HargaBeliBarang";
+            this.HargaBeliBarang.Width = 150;
+            // 
+            // HargaJualBarang
+            // 
+            this.HargaJualBarang.HeaderText = "Harga Jual";
+            this.HargaJualBarang.MinimumWidth = 8;
+            this.HargaJualBarang.Name = "HargaJualBarang";
+            this.HargaJualBarang.Width = 150;
             // 
             // MasterBarang
             // 
@@ -257,5 +312,11 @@ namespace TokoPlastikMandiri.Master
         private System.Windows.Forms.Button btnHapusMasterBarang;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn KodeBarang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamaBarang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QtyBarang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KategoriBarang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SatuanBarang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HargaBeliBarang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HargaJualBarang;
     }
 }

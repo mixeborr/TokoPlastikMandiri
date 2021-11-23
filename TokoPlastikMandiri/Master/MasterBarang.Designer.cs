@@ -46,6 +46,8 @@ namespace TokoPlastikMandiri.Master
             this.btnUbahMasterBarang = new System.Windows.Forms.Button();
             this.btnHapusMasterBarang = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.KodeBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxInputBarang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -201,12 +203,29 @@ namespace TokoPlastikMandiri.Master
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.KodeBarang,
+            this.NamaBarang});
             this.dataGridView1.Location = new System.Drawing.Point(12, 242);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(776, 196);
             this.dataGridView1.TabIndex = 4;
+            // 
+            // KodeBarang
+            // 
+            this.KodeBarang.HeaderText = "Kode";
+            this.KodeBarang.MinimumWidth = 8;
+            this.KodeBarang.Name = "KodeBarang";
+            this.KodeBarang.Width = 150;
+            // 
+            // NamaBarang
+            // 
+            this.NamaBarang.HeaderText = "Nama";
+            this.NamaBarang.MinimumWidth = 8;
+            this.NamaBarang.Name = "NamaBarang";
+            this.NamaBarang.Width = 150;
             // 
             // MasterBarang
             // 
@@ -246,5 +265,7 @@ namespace TokoPlastikMandiri.Master
         private System.Windows.Forms.Button btnUbahMasterBarang;
         private System.Windows.Forms.Button btnHapusMasterBarang;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KodeBarang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamaBarang;
     }
 }

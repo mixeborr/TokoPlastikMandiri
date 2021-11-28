@@ -56,5 +56,10 @@ namespace TokoPlastikMandiri.Main
             masterSupplier.Show();
             this.Hide();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -135,5 +135,13 @@ namespace TokoPlastikMandiri.Master
             return cekAda;
 
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idx = e.RowIndex;
+
+            txtKode.Text = dataGridView1.Rows[idx].Cells[0].Value.ToString();
+            txtKategori.Text = dataGridView1.Rows[idx].Cells[1].Value.ToString();
+        }
     }
 }

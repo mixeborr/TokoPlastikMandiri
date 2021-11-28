@@ -38,6 +38,8 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kategori = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +47,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kode,
+            this.kategori});
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Location = new System.Drawing.Point(12, 173);
             this.dataGridView1.Name = "dataGridView1";
@@ -53,6 +58,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(338, 265);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // groupBox1
@@ -141,6 +147,22 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // kode
+            // 
+            this.kode.DataPropertyName = "kategoricd";
+            this.kode.HeaderText = "Kode";
+            this.kode.Name = "kode";
+            this.kode.ReadOnly = true;
+            this.kode.Width = 110;
+            // 
+            // kategori
+            // 
+            this.kategori.DataPropertyName = "kategorinm";
+            this.kategori.HeaderText = "Nama Kategori";
+            this.kategori.Name = "kategori";
+            this.kategori.ReadOnly = true;
+            this.kategori.Width = 176;
+            // 
             // MasterKategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,5 +197,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kategori;
     }
 }

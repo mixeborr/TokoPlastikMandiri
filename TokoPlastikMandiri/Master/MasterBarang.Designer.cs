@@ -71,9 +71,11 @@ namespace TokoPlastikMandiri.Master
             this.groupBoxInputBarang.Controls.Add(this.label2);
             this.groupBoxInputBarang.Controls.Add(this.tbKodeBarang);
             this.groupBoxInputBarang.Controls.Add(this.label1);
-            this.groupBoxInputBarang.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxInputBarang.Location = new System.Drawing.Point(8, 8);
+            this.groupBoxInputBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBoxInputBarang.Name = "groupBoxInputBarang";
-            this.groupBoxInputBarang.Size = new System.Drawing.Size(776, 171);
+            this.groupBoxInputBarang.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxInputBarang.Size = new System.Drawing.Size(517, 111);
             this.groupBoxInputBarang.TabIndex = 0;
             this.groupBoxInputBarang.TabStop = false;
             this.groupBoxInputBarang.Text = "Master Barang";
@@ -81,82 +83,92 @@ namespace TokoPlastikMandiri.Master
             // cbSatuanBarang
             // 
             this.cbSatuanBarang.FormattingEnabled = true;
-            this.cbSatuanBarang.Location = new System.Drawing.Point(505, 87);
+            this.cbSatuanBarang.Location = new System.Drawing.Point(337, 57);
+            this.cbSatuanBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbSatuanBarang.Name = "cbSatuanBarang";
-            this.cbSatuanBarang.Size = new System.Drawing.Size(121, 28);
+            this.cbSatuanBarang.Size = new System.Drawing.Size(82, 21);
             this.cbSatuanBarang.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(501, 64);
+            this.label6.Location = new System.Drawing.Point(334, 42);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 20);
+            this.label6.Size = new System.Drawing.Size(78, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Satuan Barang";
             // 
             // tbHargaJualBarang
             // 
-            this.tbHargaJualBarang.Location = new System.Drawing.Point(484, 132);
+            this.tbHargaJualBarang.Location = new System.Drawing.Point(323, 86);
+            this.tbHargaJualBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbHargaJualBarang.Name = "tbHargaJualBarang";
-            this.tbHargaJualBarang.Size = new System.Drawing.Size(230, 26);
+            this.tbHargaJualBarang.Size = new System.Drawing.Size(155, 20);
             this.tbHargaJualBarang.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(349, 138);
+            this.label5.Location = new System.Drawing.Point(233, 90);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 20);
+            this.label5.Size = new System.Drawing.Size(58, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Harga Jual";
             // 
             // tbHargaBeliBarang
             // 
-            this.tbHargaBeliBarang.Location = new System.Drawing.Point(95, 132);
+            this.tbHargaBeliBarang.Location = new System.Drawing.Point(63, 86);
+            this.tbHargaBeliBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbHargaBeliBarang.Name = "tbHargaBeliBarang";
-            this.tbHargaBeliBarang.Size = new System.Drawing.Size(231, 26);
+            this.tbHargaBeliBarang.Size = new System.Drawing.Size(155, 20);
             this.tbHargaBeliBarang.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 138);
+            this.label4.Location = new System.Drawing.Point(4, 90);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 20);
+            this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Harga Beli";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(349, 64);
+            this.label3.Location = new System.Drawing.Point(233, 42);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 20);
+            this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Kategori Barang ";
             // 
             // cbKategoriBarang
             // 
             this.cbKategoriBarang.FormattingEnabled = true;
-            this.cbKategoriBarang.Location = new System.Drawing.Point(353, 87);
+            this.cbKategoriBarang.Location = new System.Drawing.Point(235, 57);
+            this.cbKategoriBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbKategoriBarang.Name = "cbKategoriBarang";
-            this.cbKategoriBarang.Size = new System.Drawing.Size(121, 28);
+            this.cbKategoriBarang.Size = new System.Drawing.Size(82, 21);
             this.cbKategoriBarang.TabIndex = 4;
             // 
             // tbNamaBarang
             // 
-            this.tbNamaBarang.Location = new System.Drawing.Point(96, 87);
+            this.tbNamaBarang.Location = new System.Drawing.Point(64, 57);
+            this.tbNamaBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbNamaBarang.Name = "tbNamaBarang";
-            this.tbNamaBarang.Size = new System.Drawing.Size(230, 26);
+            this.tbNamaBarang.Size = new System.Drawing.Size(155, 20);
             this.tbNamaBarang.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 90);
+            this.label2.Location = new System.Drawing.Point(4, 58);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nama";
             // 
@@ -164,43 +176,48 @@ namespace TokoPlastikMandiri.Master
             // 
             this.tbKodeBarang.BackColor = System.Drawing.SystemColors.Control;
             this.tbKodeBarang.Enabled = false;
-            this.tbKodeBarang.Location = new System.Drawing.Point(96, 41);
+            this.tbKodeBarang.Location = new System.Drawing.Point(64, 27);
+            this.tbKodeBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbKodeBarang.Name = "tbKodeBarang";
-            this.tbKodeBarang.Size = new System.Drawing.Size(230, 26);
+            this.tbKodeBarang.Size = new System.Drawing.Size(155, 20);
             this.tbKodeBarang.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 41);
+            this.label1.Location = new System.Drawing.Point(4, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 20);
+            this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kode";
             // 
             // btnTambahMasterBarang
             // 
-            this.btnTambahMasterBarang.Location = new System.Drawing.Point(13, 190);
+            this.btnTambahMasterBarang.Location = new System.Drawing.Point(9, 123);
+            this.btnTambahMasterBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTambahMasterBarang.Name = "btnTambahMasterBarang";
-            this.btnTambahMasterBarang.Size = new System.Drawing.Size(100, 35);
+            this.btnTambahMasterBarang.Size = new System.Drawing.Size(67, 23);
             this.btnTambahMasterBarang.TabIndex = 1;
             this.btnTambahMasterBarang.Text = "Tambah";
             this.btnTambahMasterBarang.UseVisualStyleBackColor = true;
             // 
             // btnUbahMasterBarang
             // 
-            this.btnUbahMasterBarang.Location = new System.Drawing.Point(119, 190);
+            this.btnUbahMasterBarang.Location = new System.Drawing.Point(79, 123);
+            this.btnUbahMasterBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUbahMasterBarang.Name = "btnUbahMasterBarang";
-            this.btnUbahMasterBarang.Size = new System.Drawing.Size(100, 35);
+            this.btnUbahMasterBarang.Size = new System.Drawing.Size(67, 23);
             this.btnUbahMasterBarang.TabIndex = 2;
             this.btnUbahMasterBarang.Text = "Ubah";
             this.btnUbahMasterBarang.UseVisualStyleBackColor = true;
             // 
             // btnHapusMasterBarang
             // 
-            this.btnHapusMasterBarang.Location = new System.Drawing.Point(225, 189);
+            this.btnHapusMasterBarang.Location = new System.Drawing.Point(150, 123);
+            this.btnHapusMasterBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHapusMasterBarang.Name = "btnHapusMasterBarang";
-            this.btnHapusMasterBarang.Size = new System.Drawing.Size(100, 35);
+            this.btnHapusMasterBarang.Size = new System.Drawing.Size(67, 23);
             this.btnHapusMasterBarang.TabIndex = 3;
             this.btnHapusMasterBarang.Text = "Hapus";
             this.btnHapusMasterBarang.UseVisualStyleBackColor = true;
@@ -216,11 +233,12 @@ namespace TokoPlastikMandiri.Master
             this.SatuanBarang,
             this.HargaBeliBarang,
             this.HargaJualBarang});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 242);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 157);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 196);
+            this.dataGridView1.Size = new System.Drawing.Size(774, 224);
             this.dataGridView1.TabIndex = 4;
             // 
             // KodeBarang
@@ -275,14 +293,15 @@ namespace TokoPlastikMandiri.Master
             // 
             // MasterBarang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(793, 392);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnHapusMasterBarang);
             this.Controls.Add(this.btnUbahMasterBarang);
             this.Controls.Add(this.btnTambahMasterBarang);
             this.Controls.Add(this.groupBoxInputBarang);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MasterBarang";
             this.Text = "MasterBarang";
             this.groupBoxInputBarang.ResumeLayout(false);

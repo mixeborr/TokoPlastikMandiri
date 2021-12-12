@@ -61,5 +61,12 @@ namespace TokoPlastikMandiri.Main
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Transaksi.FormTransaksiPembelian pembelian = new Transaksi.FormTransaksiPembelian();
+            pembelian.Show();
+            this.Hide();
+        }
     }
 }

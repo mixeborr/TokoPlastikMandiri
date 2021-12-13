@@ -140,6 +140,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaksi\FormBayarPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\FormBayarPenjualan.Designer.cs">
+      <DependentUpon>FormBayarPenjualan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transaksi\FormTransaksiPembelian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Transaksi\FormBayarPenjualan.resx">
+      <DependentUpon>FormBayarPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transaksi\FormTransaksiPembelian.resx">
       <DependentUpon>FormTransaksiPembelian.cs</DependentUpon>
     </EmbeddedResource>

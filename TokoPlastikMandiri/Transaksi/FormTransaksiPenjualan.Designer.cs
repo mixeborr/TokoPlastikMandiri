@@ -30,6 +30,12 @@ namespace TokoPlastikMandiri.Transaksi
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbAlamatPenjualan = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbNamaCustomerPenjualan = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbNoTransPenjualan = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cbSatuanPenjualan = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tbKodeItemPenjualan = new System.Windows.Forms.TextBox();
@@ -38,12 +44,6 @@ namespace TokoPlastikMandiri.Transaksi
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbNamaItemPenjualan = new System.Windows.Forms.ComboBox();
-            this.tbAlamatPenjualan = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbNamaCustomerPenjualan = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbNoTransPenjualan = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnKodeItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNamaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +56,7 @@ namespace TokoPlastikMandiri.Transaksi
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnBayar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +83,56 @@ namespace TokoPlastikMandiri.Transaksi
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Penjualan";
+            // 
+            // tbAlamatPenjualan
+            // 
+            this.tbAlamatPenjualan.Location = new System.Drawing.Point(463, 128);
+            this.tbAlamatPenjualan.Name = "tbAlamatPenjualan";
+            this.tbAlamatPenjualan.Size = new System.Drawing.Size(230, 26);
+            this.tbAlamatPenjualan.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(334, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 20);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Alamat";
+            // 
+            // tbNamaCustomerPenjualan
+            // 
+            this.tbNamaCustomerPenjualan.Location = new System.Drawing.Point(464, 84);
+            this.tbNamaCustomerPenjualan.Name = "tbNamaCustomerPenjualan";
+            this.tbNamaCustomerPenjualan.Size = new System.Drawing.Size(230, 26);
+            this.tbNamaCustomerPenjualan.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(334, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 20);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Nama Customer";
+            // 
+            // tbNoTransPenjualan
+            // 
+            this.tbNoTransPenjualan.BackColor = System.Drawing.SystemColors.Control;
+            this.tbNoTransPenjualan.Enabled = false;
+            this.tbNoTransPenjualan.Location = new System.Drawing.Point(463, 35);
+            this.tbNoTransPenjualan.Name = "tbNoTransPenjualan";
+            this.tbNoTransPenjualan.Size = new System.Drawing.Size(230, 26);
+            this.tbNoTransPenjualan.TabIndex = 25;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(333, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 20);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "No. Transaksi";
             // 
             // cbSatuanPenjualan
             // 
@@ -148,56 +199,6 @@ namespace TokoPlastikMandiri.Transaksi
             this.cbNamaItemPenjualan.Name = "cbNamaItemPenjualan";
             this.cbNamaItemPenjualan.Size = new System.Drawing.Size(187, 28);
             this.cbNamaItemPenjualan.TabIndex = 16;
-            // 
-            // tbAlamatPenjualan
-            // 
-            this.tbAlamatPenjualan.Location = new System.Drawing.Point(463, 128);
-            this.tbAlamatPenjualan.Name = "tbAlamatPenjualan";
-            this.tbAlamatPenjualan.Size = new System.Drawing.Size(230, 26);
-            this.tbAlamatPenjualan.TabIndex = 29;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(334, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 20);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Alamat";
-            // 
-            // tbNamaCustomerPenjualan
-            // 
-            this.tbNamaCustomerPenjualan.Location = new System.Drawing.Point(464, 84);
-            this.tbNamaCustomerPenjualan.Name = "tbNamaCustomerPenjualan";
-            this.tbNamaCustomerPenjualan.Size = new System.Drawing.Size(230, 26);
-            this.tbNamaCustomerPenjualan.TabIndex = 27;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(334, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 20);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Nama Customer";
-            // 
-            // tbNoTransPenjualan
-            // 
-            this.tbNoTransPenjualan.BackColor = System.Drawing.SystemColors.Control;
-            this.tbNoTransPenjualan.Enabled = false;
-            this.tbNoTransPenjualan.Location = new System.Drawing.Point(463, 35);
-            this.tbNoTransPenjualan.Name = "tbNoTransPenjualan";
-            this.tbNoTransPenjualan.Size = new System.Drawing.Size(230, 26);
-            this.tbNoTransPenjualan.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(333, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 20);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "No. Transaksi";
             // 
             // dataGridView1
             // 
@@ -307,11 +308,21 @@ namespace TokoPlastikMandiri.Transaksi
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // TransaksiPenjualan
+            // btnBayar
+            // 
+            this.btnBayar.Location = new System.Drawing.Point(13, 592);
+            this.btnBayar.Name = "btnBayar";
+            this.btnBayar.Size = new System.Drawing.Size(111, 34);
+            this.btnBayar.TabIndex = 17;
+            this.btnBayar.Text = "Bayar";
+            this.btnBayar.UseVisualStyleBackColor = true;
+            // 
+            // FormTransaksiPenjualan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 635);
+            this.Controls.Add(this.btnBayar);
             this.Controls.Add(this.tbTotalPembelian);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnDelete);
@@ -319,8 +330,8 @@ namespace TokoPlastikMandiri.Transaksi
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "TransaksiPenjualan";
-            this.Text = "TransaksiPenjualan";
+            this.Name = "FormTransaksiPenjualan";
+            this.Text = "Transaksi Penjualan";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -358,5 +369,6 @@ namespace TokoPlastikMandiri.Transaksi
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnBayar;
     }
 }

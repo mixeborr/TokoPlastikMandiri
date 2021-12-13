@@ -19,7 +19,7 @@ namespace TokoPlastikMandiri.Transaksi
 
         private void FormTransaksiPembelian_Load(object sender, EventArgs e)
         {
-            tbNoTrans.Text = DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString();
+            tbNoTransPembelian.Text = DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

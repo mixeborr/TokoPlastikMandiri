@@ -41,7 +41,7 @@ namespace TokoPlastikMandiri.Transaksi
             this.cbNamaItemPembelian = new System.Windows.Forms.ComboBox();
             this.tbAlamatPembelian = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbNamaCustomerPembelian = new System.Windows.Forms.TextBox();
+            this.tbNamaSupplierPembelian = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbNoTransPembelian = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@ namespace TokoPlastikMandiri.Transaksi
             this.ColumnSatuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnHargaBeli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnFinishTransaction = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxInputBarang.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +92,7 @@ namespace TokoPlastikMandiri.Transaksi
             this.groupBoxInputBarang.Controls.Add(this.cbNamaItemPembelian);
             this.groupBoxInputBarang.Controls.Add(this.tbAlamatPembelian);
             this.groupBoxInputBarang.Controls.Add(this.label4);
-            this.groupBoxInputBarang.Controls.Add(this.tbNamaCustomerPembelian);
+            this.groupBoxInputBarang.Controls.Add(this.tbNamaSupplierPembelian);
             this.groupBoxInputBarang.Controls.Add(this.label2);
             this.groupBoxInputBarang.Controls.Add(this.tbNoTransPembelian);
             this.groupBoxInputBarang.Controls.Add(this.label1);
@@ -184,21 +185,21 @@ namespace TokoPlastikMandiri.Transaksi
             this.label4.TabIndex = 6;
             this.label4.Text = "Alamat";
             // 
-            // tbNamaCustomerPembelian
+            // tbNamaSupplierPembelian
             // 
-            this.tbNamaCustomerPembelian.Location = new System.Drawing.Point(481, 83);
-            this.tbNamaCustomerPembelian.Name = "tbNamaCustomerPembelian";
-            this.tbNamaCustomerPembelian.Size = new System.Drawing.Size(230, 26);
-            this.tbNamaCustomerPembelian.TabIndex = 3;
+            this.tbNamaSupplierPembelian.Location = new System.Drawing.Point(481, 83);
+            this.tbNamaSupplierPembelian.Name = "tbNamaSupplierPembelian";
+            this.tbNamaSupplierPembelian.Size = new System.Drawing.Size(230, 26);
+            this.tbNamaSupplierPembelian.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(351, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 20);
+            this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nama Customer";
+            this.label2.Text = "Nama Supplier";
             // 
             // tbNoTransPembelian
             // 
@@ -316,11 +317,21 @@ namespace TokoPlastikMandiri.Transaksi
             this.ColumnSubtotal.ReadOnly = true;
             this.ColumnSubtotal.Width = 150;
             // 
+            // btnFinishTransaction
+            // 
+            this.btnFinishTransaction.Location = new System.Drawing.Point(9, 589);
+            this.btnFinishTransaction.Name = "btnFinishTransaction";
+            this.btnFinishTransaction.Size = new System.Drawing.Size(188, 34);
+            this.btnFinishTransaction.TabIndex = 12;
+            this.btnFinishTransaction.Text = "Finish Transaction";
+            this.btnFinishTransaction.UseVisualStyleBackColor = true;
+            // 
             // FormTransaksiPembelian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 635);
+            this.Controls.Add(this.btnFinishTransaction);
             this.Controls.Add(this.tbTotalPembelian);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnDelete);
@@ -345,7 +356,7 @@ namespace TokoPlastikMandiri.Transaksi
         private System.Windows.Forms.GroupBox groupBoxInputBarang;
         private System.Windows.Forms.TextBox tbAlamatPembelian;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbNamaCustomerPembelian;
+        private System.Windows.Forms.TextBox tbNamaSupplierPembelian;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNoTransPembelian;
         private System.Windows.Forms.Label label1;
@@ -368,5 +379,6 @@ namespace TokoPlastikMandiri.Transaksi
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSatuan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnHargaBeli;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubtotal;
+        private System.Windows.Forms.Button btnFinishTransaction;
     }
 }

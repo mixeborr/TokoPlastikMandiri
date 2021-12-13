@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TokoPlastikMandiri.Transaksi
 {
-    public partial class TransaksiPenjualan : Form
+    public partial class FormTransaksiPenjualan : Form
     {
-        public TransaksiPenjualan()
+        public FormTransaksiPenjualan()
         {
             InitializeComponent();
         }

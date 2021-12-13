@@ -146,11 +146,11 @@
     <Compile Include="Transaksi\FormTransaksiPembelian.Designer.cs">
       <DependentUpon>FormTransaksiPembelian.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaksi\TransaksiPenjualan.cs">
+    <Compile Include="Transaksi\FormTransaksiPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaksi\TransaksiPenjualan.Designer.cs">
-      <DependentUpon>TransaksiPenjualan.cs</DependentUpon>
+    <Compile Include="Transaksi\FormTransaksiPenjualan.Designer.cs">
+      <DependentUpon>FormTransaksiPenjualan.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Main\LoginMain.resx">
       <DependentUpon>LoginMain.cs</DependentUpon>
@@ -186,8 +186,8 @@
     <EmbeddedResource Include="Transaksi\FormTransaksiPembelian.resx">
       <DependentUpon>FormTransaksiPembelian.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaksi\TransaksiPenjualan.resx">
-      <DependentUpon>TransaksiPenjualan.cs</DependentUpon>
+    <EmbeddedResource Include="Transaksi\FormTransaksiPenjualan.resx">
+      <DependentUpon>FormTransaksiPenjualan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

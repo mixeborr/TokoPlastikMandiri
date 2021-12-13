@@ -1,7 +1,7 @@
 ﻿
 namespace TokoPlastikMandiri.Transaksi
 {
-    partial class TransaksiPenjualan
+    partial class FormTransaksiPenjualan
     {
         /// <summary>
         /// Required designer variable.

@@ -56,7 +56,6 @@ namespace TokoPlastikMandiri.Transaksi
             this.ColumnSatuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnHargaBeli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnFinishTransaction = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxInputBarang.SuspendLayout();
             this.SuspendLayout();
@@ -317,21 +316,11 @@ namespace TokoPlastikMandiri.Transaksi
             this.ColumnSubtotal.ReadOnly = true;
             this.ColumnSubtotal.Width = 150;
             // 
-            // btnFinishTransaction
-            // 
-            this.btnFinishTransaction.Location = new System.Drawing.Point(9, 589);
-            this.btnFinishTransaction.Name = "btnFinishTransaction";
-            this.btnFinishTransaction.Size = new System.Drawing.Size(188, 34);
-            this.btnFinishTransaction.TabIndex = 12;
-            this.btnFinishTransaction.Text = "Finish Transaction";
-            this.btnFinishTransaction.UseVisualStyleBackColor = true;
-            // 
             // FormTransaksiPembelian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 635);
-            this.Controls.Add(this.btnFinishTransaction);
             this.Controls.Add(this.tbTotalPembelian);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnDelete);
@@ -379,6 +368,5 @@ namespace TokoPlastikMandiri.Transaksi
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSatuan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnHargaBeli;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubtotal;
-        private System.Windows.Forms.Button btnFinishTransaction;
     }
 }

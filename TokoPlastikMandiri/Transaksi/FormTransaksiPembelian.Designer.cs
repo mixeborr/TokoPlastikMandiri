@@ -49,7 +49,7 @@ namespace TokoPlastikMandiri.Transaksi
             this.label7 = new System.Windows.Forms.Label();
             this.cbSatuan = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbTotalPembelian = new System.Windows.Forms.TextBox();
             this.Kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QtyBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -255,12 +255,12 @@ namespace TokoPlastikMandiri.Transaksi
             this.label8.TabIndex = 10;
             this.label8.Text = "Total";
             // 
-            // textBox2
+            // tbTotalPembelian
             // 
-            this.textBox2.Location = new System.Drawing.Point(962, 534);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 26);
-            this.textBox2.TabIndex = 11;
+            this.tbTotalPembelian.Location = new System.Drawing.Point(962, 534);
+            this.tbTotalPembelian.Name = "tbTotalPembelian";
+            this.tbTotalPembelian.Size = new System.Drawing.Size(208, 26);
+            this.tbTotalPembelian.TabIndex = 11;
             // 
             // Kode
             // 
@@ -319,7 +319,7 @@ namespace TokoPlastikMandiri.Transaksi
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 635);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbTotalPembelian);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -365,6 +365,6 @@ namespace TokoPlastikMandiri.Transaksi
         private System.Windows.Forms.ComboBox cbSatuan;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbTotalPembelian;
     }
 }

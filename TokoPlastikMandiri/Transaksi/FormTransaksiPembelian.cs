@@ -21,5 +21,10 @@ namespace TokoPlastikMandiri.Transaksi
         {
             tbNoTrans.Text = DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

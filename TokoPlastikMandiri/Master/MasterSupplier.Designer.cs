@@ -34,6 +34,7 @@ namespace TokoPlastikMandiri.Master
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTambah = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.cbTOP = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,13 +48,13 @@ namespace TokoPlastikMandiri.Master
             this.label1 = new System.Windows.Forms.Label();
             this.txtAlamat = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alamat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.terms = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -130,6 +131,16 @@ namespace TokoPlastikMandiri.Master
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Master Supplier";
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(543, 103);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 15;
+            this.btnClear.Text = "Bersihkan";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // cbTOP
             // 
             this.cbTOP.FormattingEnabled = true;
@@ -150,9 +161,9 @@ namespace TokoPlastikMandiri.Master
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(247, 109);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 13);
+            this.label7.Size = new System.Drawing.Size(121, 13);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Terms of payment ";
+            this.label7.Text = "Ketentuan Pembayaran ";
             // 
             // label6
             // 
@@ -175,9 +186,9 @@ namespace TokoPlastikMandiri.Master
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(247, 31);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 13);
+            this.label5.Size = new System.Drawing.Size(74, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Contact Person";
+            this.label5.Text = "Nomor Telpon";
             // 
             // txtCP
             // 
@@ -243,6 +254,16 @@ namespace TokoPlastikMandiri.Master
             this.txtNama.Size = new System.Drawing.Size(141, 20);
             this.txtNama.TabIndex = 0;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(709, 171);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 13;
+            this.btnBack.Text = "Kembali";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // kode
             // 
             this.kode.DataPropertyName = "kode";
@@ -270,7 +291,7 @@ namespace TokoPlastikMandiri.Master
             // cp
             // 
             this.cp.DataPropertyName = "cp";
-            this.cp.HeaderText = "Contact Person";
+            this.cp.HeaderText = "Nomor Telpon";
             this.cp.Name = "cp";
             this.cp.ReadOnly = true;
             this.cp.Width = 120;
@@ -286,31 +307,23 @@ namespace TokoPlastikMandiri.Master
             // terms
             // 
             this.terms.DataPropertyName = "terms";
-            this.terms.HeaderText = "Terms Of Payment";
+            this.terms.HeaderText = "Ketentuan Pembayaran";
             this.terms.Name = "terms";
             this.terms.ReadOnly = true;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(543, 103);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 15;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // MasterSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnUbah);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.groupBox1);
             this.Name = "MasterSupplier";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MasterSupplier";
             this.Load += new System.EventHandler(this.MasterSupplier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -340,12 +353,13 @@ namespace TokoPlastikMandiri.Master
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.ComboBox cbTOP;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.DataGridViewTextBoxColumn kode;
         private System.Windows.Forms.DataGridViewTextBoxColumn nama;
         private System.Windows.Forms.DataGridViewTextBoxColumn alamat;
         private System.Windows.Forms.DataGridViewTextBoxColumn cp;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn terms;
-        private System.Windows.Forms.Button btnClear;
     }
 }

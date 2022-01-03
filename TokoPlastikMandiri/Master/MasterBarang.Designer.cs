@@ -48,6 +48,7 @@ namespace TokoPlastikMandiri.Master
             this.btnUbahMasterBarang = new System.Windows.Forms.Button();
             this.btnHapusMasterBarang = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
             this.KodeBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QtyBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,17 +98,21 @@ namespace TokoPlastikMandiri.Master
             // 
             this.tbQty.Location = new System.Drawing.Point(299, 57);
             this.tbQty.Name = "tbQty";
+            this.tbQty.ReadOnly = true;
             this.tbQty.Size = new System.Drawing.Size(128, 20);
             this.tbQty.TabIndex = 12;
+            this.tbQty.Text = "0";
             // 
             // cbSatuanBarang
             // 
             this.cbSatuanBarang.FormattingEnabled = true;
             this.cbSatuanBarang.Items.AddRange(new object[] {
-            "box",
-            "lusin",
-            "pack",
-            "pcs"});
+            "BOX",
+            "BAL",
+            "LUSIN",
+            "PACK",
+            "KG",
+            "PCS"});
             this.cbSatuanBarang.Location = new System.Drawing.Point(345, 27);
             this.cbSatuanBarang.Margin = new System.Windows.Forms.Padding(2);
             this.cbSatuanBarang.Name = "cbSatuanBarang";
@@ -273,6 +278,16 @@ namespace TokoPlastikMandiri.Master
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(702, 123);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "Kembali";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // KodeBarang
             // 
             this.KodeBarang.DataPropertyName = "kode";
@@ -280,6 +295,7 @@ namespace TokoPlastikMandiri.Master
             this.KodeBarang.MinimumWidth = 8;
             this.KodeBarang.Name = "KodeBarang";
             this.KodeBarang.ReadOnly = true;
+            this.KodeBarang.Visible = false;
             this.KodeBarang.Width = 8;
             // 
             // NamaBarang
@@ -288,6 +304,7 @@ namespace TokoPlastikMandiri.Master
             this.NamaBarang.HeaderText = "Nama";
             this.NamaBarang.MinimumWidth = 8;
             this.NamaBarang.Name = "NamaBarang";
+            this.NamaBarang.ReadOnly = true;
             this.NamaBarang.Width = 150;
             // 
             // QtyBarang
@@ -296,7 +313,8 @@ namespace TokoPlastikMandiri.Master
             this.QtyBarang.HeaderText = "Qty";
             this.QtyBarang.MinimumWidth = 8;
             this.QtyBarang.Name = "QtyBarang";
-            this.QtyBarang.Width = 150;
+            this.QtyBarang.ReadOnly = true;
+            this.QtyBarang.Width = 80;
             // 
             // KategoriBarang
             // 
@@ -304,7 +322,7 @@ namespace TokoPlastikMandiri.Master
             this.KategoriBarang.HeaderText = "Kategori";
             this.KategoriBarang.MinimumWidth = 8;
             this.KategoriBarang.Name = "KategoriBarang";
-            this.KategoriBarang.Width = 150;
+            this.KategoriBarang.ReadOnly = true;
             // 
             // SatuanBarang
             // 
@@ -312,7 +330,7 @@ namespace TokoPlastikMandiri.Master
             this.SatuanBarang.HeaderText = "Satuan";
             this.SatuanBarang.MinimumWidth = 8;
             this.SatuanBarang.Name = "SatuanBarang";
-            this.SatuanBarang.Width = 150;
+            this.SatuanBarang.ReadOnly = true;
             // 
             // HargaBeliBarang
             // 
@@ -320,6 +338,7 @@ namespace TokoPlastikMandiri.Master
             this.HargaBeliBarang.HeaderText = "Harga Beli";
             this.HargaBeliBarang.MinimumWidth = 8;
             this.HargaBeliBarang.Name = "HargaBeliBarang";
+            this.HargaBeliBarang.ReadOnly = true;
             this.HargaBeliBarang.Width = 150;
             // 
             // HargaJualBarang
@@ -328,6 +347,7 @@ namespace TokoPlastikMandiri.Master
             this.HargaJualBarang.HeaderText = "Harga Jual";
             this.HargaJualBarang.MinimumWidth = 8;
             this.HargaJualBarang.Name = "HargaJualBarang";
+            this.HargaJualBarang.ReadOnly = true;
             this.HargaJualBarang.Width = 150;
             // 
             // MasterBarang
@@ -335,6 +355,7 @@ namespace TokoPlastikMandiri.Master
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 392);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnHapusMasterBarang);
             this.Controls.Add(this.btnUbahMasterBarang);
@@ -342,6 +363,7 @@ namespace TokoPlastikMandiri.Master
             this.Controls.Add(this.groupBoxInputBarang);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MasterBarang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MasterBarang";
             this.Load += new System.EventHandler(this.MasterBarang_Load);
             this.groupBoxInputBarang.ResumeLayout(false);
@@ -372,6 +394,7 @@ namespace TokoPlastikMandiri.Master
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbQty;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.DataGridViewTextBoxColumn KodeBarang;
         private System.Windows.Forms.DataGridViewTextBoxColumn NamaBarang;
         private System.Windows.Forms.DataGridViewTextBoxColumn QtyBarang;

@@ -140,5 +140,11 @@ namespace TokoPlastikMandiri.Master
             kosonginTextBox();
             refreshTable();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Main.MenuForm().Show();
+        }
     }
 }

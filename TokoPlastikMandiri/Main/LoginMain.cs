@@ -15,8 +15,8 @@ namespace TokoPlastikMandiri
 {
     public partial class LoginMain : Form
     {
-       
 
+        string role = "";
         public LoginMain()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         {
             InitializeComponent();
@@ -24,8 +24,8 @@ namespace TokoPlastikMandiri
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtUsername.Text = "maman";
-            txtPassword.Text = "maman";
+            txtUsername.Text = "admin";
+            txtPassword.Text = "admin";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -43,28 +43,55 @@ namespace TokoPlastikMandiri
                     NpgsqlCommand cmd = new NpgsqlCommand();
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "select username, password, role from loginuser where username = '"+ txtUsername.Text +"' and password = '"+txtPassword.Text+"'";
+                    cmd.CommandText = "select role from loginuser where username = '"+ txtUsername.Text +"' and password = '"+txtPassword.Text+"'";
                     NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     conn.Dispose();
+                    conn.Close();
                     if (dt.Rows.Count > 0)
                     {
-                        Main.MenuForm menu = new Main.MenuForm();
-                        menu.ShowDialog();
-                        this.Hide();
+                        getRole();
+                        if (role == "1")
+                        {
+                            Transaksi.FormTransaksiPenjualan penjualan = new Transaksi.FormTransaksiPenjualan();
+                            penjualan.ShowDialog();
+                            this.Hide();
+                        }
+                        else if(role == "0") {
+                            Main.MenuForm menu = new Main.MenuForm();
+                            menu.ShowDialog();
+                            this.Hide();
+                        }
+                       
                     }
                     else {
-                        MessageBox.Show("pass");
+                        MessageBox.Show("Password Salah");
                     }
                     
                     
                 }
                 catch (Exception) {
-                    MessageBox.Show("COKK");
+                    MessageBox.Show("Koneksi Gagal");
                 }
                 
             }
+        }
+
+        private void getRole() {
+            NpgsqlConnection conn = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=user;Database=TokoPlastik;");
+            conn.Open();
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select role from loginuser where username = '" + txtUsername.Text + "' and password = '" + txtPassword.Text + "'";
+            NpgsqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                role = dr["role"].ToString();
+            }
+
+            conn.Close();
         }
     }
 }

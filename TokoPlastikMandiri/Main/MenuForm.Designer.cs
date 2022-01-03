@@ -39,8 +39,13 @@
             this.gbTransaksi = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.gbTransaksi.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -151,12 +156,57 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(158, 310);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(168, 59);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Laporan";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Location = new System.Drawing.Point(24, 36);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(434, 114);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Laporan";
+            this.groupBox2.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(249, 44);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(121, 41);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Pembelian";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(70, 44);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(121, 41);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Penjualan";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TokoPlastikMandiri.Properties.Resources._360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP;
             this.ClientSize = new System.Drawing.Size(487, 450);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.gbTransaksi);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
@@ -166,6 +216,7 @@
             this.Text = "MenuForm";
             this.groupBox1.ResumeLayout(false);
             this.gbTransaksi.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -183,5 +234,9 @@
         private System.Windows.Forms.GroupBox gbTransaksi;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2;
     }
 }

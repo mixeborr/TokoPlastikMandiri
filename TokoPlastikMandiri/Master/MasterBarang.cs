@@ -70,7 +70,7 @@ namespace TokoPlastikMandiri.Master
             NpgsqlCommand cmd = new NpgsqlCommand();
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select kode, nama, qty, hbeli, hjual, kategori, satuan  from barang";
+            cmd.CommandText = "select kode, nama, qty, kategori, satuan, hbeli, hjual  from barang order by kategori asc";
             NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -151,6 +151,12 @@ namespace TokoPlastikMandiri.Master
             conn.Close();
             refreshTable();
             kosonginTextBox();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Main.MenuForm().Show();
         }
     }
 }

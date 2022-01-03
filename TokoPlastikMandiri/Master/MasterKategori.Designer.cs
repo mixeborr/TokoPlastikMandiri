@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kategori = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,8 +40,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kategori = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,22 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // kode
+            // 
+            this.kode.DataPropertyName = "kategoricd";
+            this.kode.HeaderText = "Kode";
+            this.kode.Name = "kode";
+            this.kode.ReadOnly = true;
+            this.kode.Width = 110;
+            // 
+            // kategori
+            // 
+            this.kategori.DataPropertyName = "kategorinm";
+            this.kategori.HeaderText = "Nama Kategori";
+            this.kategori.Name = "kategori";
+            this.kategori.ReadOnly = true;
+            this.kategori.Width = 176;
             // 
             // groupBox1
             // 
@@ -143,25 +159,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Back";
+            this.button4.Text = "Kembali";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // kode
-            // 
-            this.kode.DataPropertyName = "kategoricd";
-            this.kode.HeaderText = "Kode";
-            this.kode.Name = "kode";
-            this.kode.ReadOnly = true;
-            this.kode.Width = 110;
-            // 
-            // kategori
-            // 
-            this.kategori.DataPropertyName = "kategorinm";
-            this.kategori.HeaderText = "Nama Kategori";
-            this.kategori.Name = "kategori";
-            this.kategori.ReadOnly = true;
-            this.kategori.Width = 176;
             // 
             // MasterKategori
             // 

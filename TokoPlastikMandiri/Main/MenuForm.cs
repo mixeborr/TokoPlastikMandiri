@@ -20,12 +20,14 @@ namespace TokoPlastikMandiri.Main
         private void button1_Click(object sender, EventArgs e)
         {
             groupBox1.Show();
+            groupBox2.Hide();
             gbTransaksi.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             gbTransaksi.Show();
+            groupBox2.Hide();
             groupBox1.Hide();
         }
 
@@ -59,12 +61,35 @@ namespace TokoPlastikMandiri.Main
 
         private void button10_Click(object sender, EventArgs e)
         {
-
+            Transaksi.FormTransaksiPenjualan penjualan = new Transaksi.FormTransaksiPenjualan();
+            penjualan.Show();
+            this.Hide();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             Transaksi.FormTransaksiPembelian pembelian = new Transaksi.FormTransaksiPembelian();
+            pembelian.Show();
+            this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            groupBox2.Show();
+            groupBox1.Hide();
+            gbTransaksi.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Laporan.LaporanPenjualan penjualan = new Laporan.LaporanPenjualan();
+            penjualan.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Laporan.LaporanPembelian pembelian = new Laporan.LaporanPembelian();
             pembelian.Show();
             this.Hide();
         }
